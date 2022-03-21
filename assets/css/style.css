@@ -107,8 +107,8 @@
     box-sizing: border-box;
     backdrop-filter: blur(100px);
     border-radius: 40px;
-    top: -217px;
-    max-width: 1321px;
+    bottom: -25%;
+    max-width: 1320px;
 }
 
 header {
@@ -132,11 +132,7 @@ header {
     font-family: var(--ff-regular);
 }
 
-.main-heading+p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: var(--fs-sm);
+.para-all-sec {
     line-height: 150%;
     color: #FFFFFF;
     opacity: 0.7;
@@ -148,6 +144,15 @@ header {
     font-size: var(--fs-md);
     line-height: 54px;
     color: var(--color-secondary);
+}
+
+.head-pret {
+    max-width: 481px;
+}
+
+.tato-img {
+    top: 30%;
+    right: -21%;
 }
 
 @media (max-width:1200px) {
@@ -237,4 +242,30 @@ nav::before {
 .under-line:hover:after {
     width: 100%;
     transform: width 1s;
+}
+
+@media (min-width:1200px) {
+    .position-xl-absolute {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, 23%);
+    }
+}
+
+@media (max-width:1400px) {
+    :root {
+        /* =============================font-sizes======================= */
+        --fs-xxl: 60px;
+        --fs-xl: 48px;
+        --fs-lg: 40px;
+        --fs-md: 35px;
+        --fs-sm: 20px;
+        --fs-xs: 20px;
+        --fs-less: 18px;
+    }
+}
+
+.new {
+    min-height: minmax(100vh 800px);
 }
